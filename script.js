@@ -32,6 +32,8 @@ function inviaRichiesta(sendMail, email, name, telephone, contact) {
         axios.post('http://localhost:8000/api/mail/createMail', dati, {
             method: 'POST',
             headers: {
+                'X-Frontend': 'vincenzo',
+                // 'X-Frontend': 'paolo',
                 'Content-Type': 'application/json',
                 'Accept': 'application/json',
             },
